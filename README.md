@@ -7,29 +7,21 @@ O app encontra o **artigo correspondente**, exibe o **trecho legal**, tenta extr
 
 ---
 
-## ✨ Funcionalidades
-
-- Busca textual por crime **no CP** (Planalto).
-- Exibição do **artigo** + **texto legal**.
-- Extração **heurística** de pena mínima/máxima (em meses) e tipo (**reclusão/detenção**).
-- Indicação **heurística** de **fiança** (CP/CPP) e **substituição da pena** (**art. 44 do CP**).
-- **Comparador**: adicione artigos e gere **gráficos**:
-  - **Faixa de pena** (mín–máx, em meses).
-  - **Distribuição** de fiança/substituição por categorias.
-- Exportação do comparador em **CSV**.
+## 🎯 Objetivo (P2)
+Criar um programa executado no **Streamlit** que permita ao usuário consultar, em tempo real, informações dos textos oficiais do **CP** e do **CPP** (Portal do Planalto).  
+Entrada: nome do crime (texto livre).  
+Saída: artigo correspondente, pena mínima e máxima, regras sobre fiança e substituição, além de **gráficos** para comparação entre crimes.
 
 ---
 
-## 📚 Fontes oficiais (APIs/alvos)
-
-- **Código Penal (CP)** – Decreto-Lei nº 2.848/1940  
-  https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
-- **Código de Processo Penal (CPP)** – Decreto-Lei nº 3.689/1941  
+## 📚 Bases utilizadas (APIs/alvos)
+- **CPP** — Decreto-Lei nº 3.689/1941  
   https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689.htm
+- **CP** — Decreto-Lei nº 2.848/1940  
+  https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
 
 > O app baixa as páginas do Planalto. Como **fallback offline**, você pode salvar os HTMLs locais (`cp.html` e `cpp.html`) na raiz do projeto.
 
 ---
 
 ## 🧩 Estrutura do repositório
-
